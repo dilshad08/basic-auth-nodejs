@@ -72,12 +72,14 @@ const successHandler = (res, message, data, jwt) => {
 
 const verifyToken = async function (req, res, next) {
 
-  const tkn = req.headers.authorization.split(' ');
+  const tkn = req.headers.authorization;
 
-  const token = tkn[1];
+  if (isDef(tkn)) {
 
-  if (isDef(token)) {
+    
+    const token = tkn.split(' ')[1];
     try {
+      
 
       // verifies secret and checks exp
       let decoded = jwt.verify(token, process.env.SECRET);
