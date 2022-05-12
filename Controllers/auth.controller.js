@@ -1,6 +1,6 @@
 const createError = require('http-errors');
-const { checkLowerCaseAlphabets, checkSpecialChar, checkValidLowerUpperCase } = require('../helpers/validation');
-const { isDef, signAccessToken, cryptPassword, comparePassword, successHandler } = require('../helpers/helper');
+const { checkLowerCaseAlphabets, checkSpecialChar, checkValidLowerUpperCase } = require('../Helpers/validation');
+const { isDef, signAccessToken, cryptPassword, comparePassword, successHandler } = require('../Helpers/helper');
 const {
   isEmpty,
   size,
