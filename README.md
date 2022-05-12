@@ -2,7 +2,6 @@ Backend apis
 Steps to follow
 
 1. install all dependancies by npm i
-2. install mongodb database on windows/linux
 
 How to run project
 
